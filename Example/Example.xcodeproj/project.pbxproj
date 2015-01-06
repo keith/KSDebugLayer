@@ -7,33 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4075EF719606A5E282A9273E /* libPods-Example_iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4293F70303FABD10DB00C6F /* libPods-Example_iOSTests.a */; };
 		C2C594DB1A5B694000953DA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C594DA1A5B694000953DA8 /* AppDelegate.m */; };
 		C2C594DD1A5B694000953DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C594DC1A5B694000953DA8 /* main.m */; };
 		C2C594E01A5B694000953DA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C594DF1A5B694000953DA8 /* ViewController.m */; };
 		C2C594E21A5B694000953DA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C594E11A5B694000953DA8 /* Images.xcassets */; };
 		C2C594E51A5B694000953DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C594E31A5B694000953DA8 /* Main.storyboard */; };
-		C2C594F11A5B694000953DA8 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C594F01A5B694000953DA8 /* ExampleTests.m */; };
 		C2C595351A5B69D900953DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C595341A5B69D900953DA8 /* main.m */; };
 		C2C595381A5B69D900953DA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C595371A5B69D900953DA8 /* AppDelegate.m */; };
-		C2C5953B1A5B69D900953DA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5953A1A5B69D900953DA8 /* ViewController.m */; };
 		C2C5953E1A5B69D900953DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2C5953C1A5B69D900953DA8 /* Main.storyboard */; };
 		C2C595401A5B69D900953DA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2C5953F1A5B69D900953DA8 /* Images.xcassets */; };
 		C2C595431A5B69D900953DA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C595411A5B69D900953DA8 /* LaunchScreen.xib */; };
 		C2C5954F1A5B69D900953DA8 /* Example_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5954E1A5B69D900953DA8 /* Example_iOSTests.m */; };
 		C2C595841A5B6F1300953DA8 /* KSDebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5955A1A5B6ACC00953DA8 /* KSDebugLayer.m */; };
 		C2C595851A5B6F1700953DA8 /* KSDebugLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5955A1A5B6ACC00953DA8 /* KSDebugLayer.m */; };
-		C2C595891A5B738E00953DA8 /* UIColor+KSInverseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C595871A5B738E00953DA8 /* UIColor+KSInverseColor.m */; };
-		C2C5958C1A5B73EE00953DA8 /* NSColor+KSInverseColor.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5958B1A5B73EE00953DA8 /* NSColor+KSInverseColor.m */; };
+		C2C595911A5B896000953DA8 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C5958F1A5B896000953DA8 /* ImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C2C594EB1A5B694000953DA8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C2C594CC1A5B694000953DA8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C2C594D31A5B694000953DA8;
-			remoteInfo = Example;
-		};
 		C2C595491A5B69D900953DA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2C594CC1A5B694000953DA8 /* Project object */;
@@ -44,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		48693C333FD9CCE588122A58 /* Pods-Example_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example_iOSTests/Pods-Example_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C2C594D41A5B694000953DA8 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C594D81A5B694000953DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C594D91A5B694000953DA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,16 +45,11 @@
 		C2C594DF1A5B694000953DA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2C594E11A5B694000953DA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2C594E41A5B694000953DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C2C594EA1A5B694000953DA8 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2C594EF1A5B694000953DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2C594F01A5B694000953DA8 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		C2C595301A5B69D900953DA8 /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C595331A5B69D900953DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2C595341A5B69D900953DA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C2C595361A5B69D900953DA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C2C595371A5B69D900953DA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C2C595391A5B69D900953DA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C2C5953A1A5B69D900953DA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C2C5953D1A5B69D900953DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2C5953F1A5B69D900953DA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C2C595421A5B69D900953DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -71,21 +58,14 @@
 		C2C5954E1A5B69D900953DA8 /* Example_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Example_iOSTests.m; sourceTree = "<group>"; };
 		C2C595591A5B6ACC00953DA8 /* KSDebugLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSDebugLayer.h; path = ../KSDebugLayer.h; sourceTree = "<group>"; };
 		C2C5955A1A5B6ACC00953DA8 /* KSDebugLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSDebugLayer.m; path = ../KSDebugLayer.m; sourceTree = "<group>"; };
-		C2C595861A5B738E00953DA8 /* UIColor+KSInverseColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+KSInverseColor.h"; path = "../UIColor+KSInverseColor.h"; sourceTree = "<group>"; };
-		C2C595871A5B738E00953DA8 /* UIColor+KSInverseColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KSInverseColor.m"; path = "../UIColor+KSInverseColor.m"; sourceTree = "<group>"; };
-		C2C5958A1A5B73EE00953DA8 /* NSColor+KSInverseColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+KSInverseColor.h"; path = "../NSColor+KSInverseColor.h"; sourceTree = "<group>"; };
-		C2C5958B1A5B73EE00953DA8 /* NSColor+KSInverseColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+KSInverseColor.m"; path = "../NSColor+KSInverseColor.m"; sourceTree = "<group>"; };
+		C2C5958E1A5B896000953DA8 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		C2C5958F1A5B896000953DA8 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		CB16A868F202E557611FFB7E /* Pods-Example_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example_iOSTests/Pods-Example_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4293F70303FABD10DB00C6F /* libPods-Example_iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example_iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C2C594D11A5B694000953DA8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2C594E71A5B694000953DA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,26 +83,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4075EF719606A5E282A9273E /* libPods-Example_iOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F9E2B9E7460299BA4C1F0B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB16A868F202E557611FFB7E /* Pods-Example_iOSTests.debug.xcconfig */,
+				48693C333FD9CCE588122A58 /* Pods-Example_iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96FB7073CF927ED1F4D778E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4293F70303FABD10DB00C6F /* libPods-Example_iOSTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2C594CB1A5B694000953DA8 = {
 			isa = PBXGroup;
 			children = (
 				C2C595591A5B6ACC00953DA8 /* KSDebugLayer.h */,
 				C2C5955A1A5B6ACC00953DA8 /* KSDebugLayer.m */,
-				C2C5958A1A5B73EE00953DA8 /* NSColor+KSInverseColor.h */,
-				C2C5958B1A5B73EE00953DA8 /* NSColor+KSInverseColor.m */,
-				C2C595861A5B738E00953DA8 /* UIColor+KSInverseColor.h */,
-				C2C595871A5B738E00953DA8 /* UIColor+KSInverseColor.m */,
 				C2C594D61A5B694000953DA8 /* Example */,
-				C2C594ED1A5B694000953DA8 /* ExampleTests */,
 				C2C595311A5B69D900953DA8 /* Example-iOS */,
 				C2C5954B1A5B69D900953DA8 /* Example-iOSTests */,
 				C2C594D51A5B694000953DA8 /* Products */,
+				3F9E2B9E7460299BA4C1F0B9 /* Pods */,
+				96FB7073CF927ED1F4D778E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				C2C594D41A5B694000953DA8 /* Example.app */,
-				C2C594EA1A5B694000953DA8 /* ExampleTests.xctest */,
 				C2C595301A5B69D900953DA8 /* Example-iOS.app */,
 				C2C595481A5B69D900953DA8 /* Example-iOSTests.xctest */,
 			);
@@ -160,30 +154,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C2C594ED1A5B694000953DA8 /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				C2C594F01A5B694000953DA8 /* ExampleTests.m */,
-				C2C594EE1A5B694000953DA8 /* Supporting Files */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
-		C2C594EE1A5B694000953DA8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2C594EF1A5B694000953DA8 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C2C595311A5B69D900953DA8 /* Example-iOS */ = {
 			isa = PBXGroup;
 			children = (
 				C2C595361A5B69D900953DA8 /* AppDelegate.h */,
 				C2C595371A5B69D900953DA8 /* AppDelegate.m */,
-				C2C595391A5B69D900953DA8 /* ViewController.h */,
-				C2C5953A1A5B69D900953DA8 /* ViewController.m */,
+				C2C5958E1A5B896000953DA8 /* ImageView.h */,
+				C2C5958F1A5B896000953DA8 /* ImageView.m */,
 				C2C5953C1A5B69D900953DA8 /* Main.storyboard */,
 				C2C5953F1A5B69D900953DA8 /* Images.xcassets */,
 				C2C595411A5B69D900953DA8 /* LaunchScreen.xib */,
@@ -238,24 +215,6 @@
 			productReference = C2C594D41A5B694000953DA8 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C2C594E91A5B694000953DA8 /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C2C594F71A5B694000953DA8 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				C2C594E61A5B694000953DA8 /* Sources */,
-				C2C594E71A5B694000953DA8 /* Frameworks */,
-				C2C594E81A5B694000953DA8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C2C594EC1A5B694000953DA8 /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = C2C594EA1A5B694000953DA8 /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		C2C5952F1A5B69D900953DA8 /* Example-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2C595541A5B69D900953DA8 /* Build configuration list for PBXNativeTarget "Example-iOS" */;
@@ -277,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2C595551A5B69D900953DA8 /* Build configuration list for PBXNativeTarget "Example-iOSTests" */;
 			buildPhases = (
+				EA18C920E5822F2BC8DEFEE0 /* Check Pods Manifest.lock */,
 				C2C595441A5B69D900953DA8 /* Sources */,
 				C2C595451A5B69D900953DA8 /* Frameworks */,
 				C2C595461A5B69D900953DA8 /* Resources */,
+				277421B663ABF1D0338A5C49 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -302,10 +263,6 @@
 				TargetAttributes = {
 					C2C594D31A5B694000953DA8 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					C2C594E91A5B694000953DA8 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = C2C594D31A5B694000953DA8;
 					};
 					C2C5952F1A5B69D900953DA8 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -330,7 +287,6 @@
 			projectRoot = "";
 			targets = (
 				C2C594D31A5B694000953DA8 /* Example */,
-				C2C594E91A5B694000953DA8 /* ExampleTests */,
 				C2C5952F1A5B69D900953DA8 /* Example-iOS */,
 				C2C595471A5B69D900953DA8 /* Example-iOSTests */,
 			);
@@ -344,13 +300,6 @@
 			files = (
 				C2C594E21A5B694000953DA8 /* Images.xcassets in Resources */,
 				C2C594E51A5B694000953DA8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C2C594E81A5B694000953DA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,12 +322,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		277421B663ABF1D0338A5C49 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example_iOSTests/Pods-Example_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA18C920E5822F2BC8DEFEE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2C594D01A5B694000953DA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C5958C1A5B73EE00953DA8 /* NSColor+KSInverseColor.m in Sources */,
 				C2C594E01A5B694000953DA8 /* ViewController.m in Sources */,
 				C2C594DD1A5B694000953DA8 /* main.m in Sources */,
 				C2C594DB1A5B694000953DA8 /* AppDelegate.m in Sources */,
@@ -386,23 +367,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2C594E61A5B694000953DA8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C2C594F11A5B694000953DA8 /* ExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C2C5952C1A5B69D900953DA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2C5953B1A5B69D900953DA8 /* ViewController.m in Sources */,
+				C2C595911A5B896000953DA8 /* ImageView.m in Sources */,
 				C2C595381A5B69D900953DA8 /* AppDelegate.m in Sources */,
 				C2C595351A5B69D900953DA8 /* main.m in Sources */,
 				C2C595841A5B6F1300953DA8 /* KSDebugLayer.m in Sources */,
-				C2C595891A5B738E00953DA8 /* UIColor+KSInverseColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,11 +389,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C2C594EC1A5B694000953DA8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C2C594D31A5B694000953DA8 /* Example */;
-			targetProxy = C2C594EB1A5B694000953DA8 /* PBXContainerItemProxy */;
-		};
 		C2C5954A1A5B69D900953DA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2C5952F1A5B69D900953DA8 /* Example-iOS */;
@@ -555,42 +522,6 @@
 			};
 			name = Release;
 		};
-		C2C594F81A5B694000953DA8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Contents/MacOS/Example";
-			};
-			name = Debug;
-		};
-		C2C594F91A5B694000953DA8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Contents/MacOS/Example";
-			};
-			name = Release;
-		};
 		C2C595501A5B69D900953DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -624,6 +555,7 @@
 		};
 		C2C595521A5B69D900953DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB16A868F202E557611FFB7E /* Pods-Example_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -633,6 +565,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"FB_REFERENCE_IMAGE_DIR=\"\\\"$(SOURCE_ROOT)/$(PROJECT_NAME)Tests/ReferenceImages\\\"\"",
 				);
 				INFOPLIST_FILE = "Example-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
@@ -645,6 +578,7 @@
 		};
 		C2C595531A5B69D900953DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48693C333FD9CCE588122A58 /* Pods-Example_iOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -678,15 +612,6 @@
 			buildConfigurations = (
 				C2C594F51A5B694000953DA8 /* Debug */,
 				C2C594F61A5B694000953DA8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C2C594F71A5B694000953DA8 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C2C594F81A5B694000953DA8 /* Debug */,
-				C2C594F91A5B694000953DA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
