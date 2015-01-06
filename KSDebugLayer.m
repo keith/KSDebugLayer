@@ -1,3 +1,13 @@
+@import Foundation;
+
+#if TARGET_OS_IPHONE
+@import UIKit;
+#import "UIColor+KSInverseColor.h"
+#else
+@import AppKit;
+#import "NSColor+KSInverseColor.h"
+#endif
+
 #import "KSDebugLayer.h"
 
 @implementation KSDebugLayer
@@ -10,32 +20,48 @@
     NSInteger y = (NSInteger)(anchor.y * size.height);
 
     CALayer *anchorPointLayer = [CALayer layer];
-    anchorPointLayer.backgroundColor = [NSColor blackColor].CGColor;
     anchorPointLayer.bounds = CGRectMake(0, 0, 6, 6);
     anchorPointLayer.cornerRadius = 3;
     anchorPointLayer.position = CGPointMake(x, y);
 
-    CGColorSpaceRef colorSpace = CGColorSpaceCreateWithName(kCGColorSpaceGenericRGB);
+    anchorPointLayer.backgroundColor = [self inverseColorForLayerWithSize:size
+                                                                      AtX:x
+                                                                        y:y];
+
+    [self addSublayer:anchorPointLayer];
+}
+
+- (CGColorRef)inverseColorForLayerWithSize:(CGSize)size
+                                       AtX:(NSInteger)x
+                                         y:(NSInteger)y
+{
+    CGColorRef colorRef;
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     size_t width = (size_t)size.width;
     size_t height = (size_t)size.height;
     CGBitmapInfo info = (CGBitmapInfo)kCGImageAlphaPremultipliedLast;
     CGContextRef contextRef = CGBitmapContextCreate(NULL, width, height,
                                                     8, 0, colorSpace, info);
+    CGColorSpaceRelease(colorSpace);
     [self renderInContext:contextRef];
 
     CGImageRef image = CGBitmapContextCreateImage(contextRef);
+
+    CGImageRelease(image);
+    CGContextRelease(contextRef);
+#if TARGET_OS_IPHONE
+    return nil;
+#else
     NSBitmapImageRep *imageRep = [[NSBitmapImageRep alloc]
                                   initWithCGImage:image];
     NSInteger flippedY = (NSInteger)(size.height - y);
     NSColor *color = [imageRep colorAtX:x y:flippedY];
-    NSColor *inverseColor = [self inverseOfColor:color];
-    anchorPointLayer.backgroundColor = inverseColor.CGColor;
 
-    CGImageRelease(image);
-    CGColorSpaceRelease(colorSpace);
-    CGContextRelease(contextRef);
 
-    [self addSublayer:anchorPointLayer];
+    colorRef = [color ks_inverseColor];
+#endif
+
+    return colorRef;
 }
 
 - (void)visualizeBounds
@@ -57,26 +83,17 @@
 
 - (CGColorRef)boundsBorderColor
 {
+#if TARGET_OS_IPHONE
+    return [[UIColor purpleColor] CGColor];
+#else
     return [[NSColor purpleColor] CGColor];
-}
-
-- (NSColor *)inverseOfColor:(NSColor *)color
-{
-    CGFloat r, g, b, a;
-    [color getRed:&r green:&g blue:&b alpha:&a];
-    if (!color || a == 0) {
-        return [NSColor greenColor];
-    }
-
-    return [NSColor colorWithRed:ABS(1 - r)
-                           green:ABS(1 - g)
-                            blue:ABS(1 - b)
-                           alpha:a];
+#endif
 }
 
 - (void)layoutSublayers
 {
     [super layoutSublayers];
+
     [self visualizeAnchorPoint];
     [self visualizeBounds];
 }
