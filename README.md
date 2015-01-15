@@ -1,5 +1,7 @@
 # KSDebugLayer
 
+[![Build Status](https://travis-ci.org/Keithbsmiley/KSDebugLayer.svg?branch=master)](https://travis-ci.org/Keithbsmiley/KSDebugLayer)
+
 A `CALayer` subclass to visualize the `anchorPoint` and `bounds` of
 the layer. Specifically useful for handling off-center animations.
 
