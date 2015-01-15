@@ -1,6 +1,6 @@
 # KSDebugLayer
 
-A `CALayer` subclass to visualize the [`anchorPoint`]() and `bounds` of
+A `CALayer` subclass to visualize the `anchorPoint` and `bounds` of
 the layer. Specifically useful for handling off-center animations.
 
 ![](https://raw.githubusercontent.com/Keithbsmiley/KSDebugLayer/master/Example/ExampleTests/screenshot.png)
